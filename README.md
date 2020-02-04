@@ -5,4 +5,4 @@ Projects Developed for Accelcreatives
 
 Studio One Page: http://growth.fiosklab.com
 
-Vertical Showcase: http://fioskla.com
+Vertical Showcase: http://fiosklab.com
