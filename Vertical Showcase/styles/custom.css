@@ -1,0 +1,794 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;  
+}
+:root{
+    --primary:  #08104d;
+    --secondary: #fff;
+    --tomato: #ff4b36;
+}
+
+/****************   LOGO    ***************************/
+
+.logo{
+    position: fixed;
+    z-index: 2;    
+    left: 30px;
+    top: 30px;
+    position: relative;
+}
+.logo img{
+    
+}
+.logo img{
+    width: 121px;
+    position: absolute;
+    
+}
+#fullpage{
+    display: none;
+}
+#loader{
+    position: relative;
+    height: 100vh;
+}
+#loader img{
+    display: inline-block;
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    margin-top: -110px;
+    margin-left: -100px;
+    left: 50%;
+}
+
+
+/*****************************************************/
+
+/***********************   FULLPAGE     **********************/
+
+.fullpage-wrapper {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-section {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	transition: all .7s ease-in-out;
+}
+
+.fp-section.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+#fp-nav ul li:first-child a span{
+    background-color: #303036;
+}
+#fp-nav ul li a.active span{
+    background-color: #fff !important;
+}
+#fp-nav ul li:nth-child(2) a span{
+    background-color: var(--tomato);
+}
+#fp-nav ul li:nth-child(3) a span{
+    background-color: #b7cefc;
+}
+#fp-nav ul li:nth-child(4) a span{
+    background-color: #1f1f24;
+}
+
+/**********************************************************/
+
+/************************  SECTION 1  ********************/
+
+
+.sec-1{
+    background-image: url(../images/rev-8-background-img-3-1.jpg);
+}
+.sec-1 button{
+    opacity: 0;
+}
+.hero{
+    line-height: 65px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 70px;
+    color: var(--secondary);
+}
+.sec-text{
+    color: var(--secondary);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    margin: 25px 0 50px 0;
+}
+
+.btn{
+    width: 190px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 5px;
+    transition: all 0.4s;
+}
+.btn-sec{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.btn-pri{
+    background-color: var(--primary);
+}
+.arrow-right{
+    transition: all 0.4s;
+    margin-left: 10px;
+}
+button .arrow-left{
+    vertical-align: 2px;
+    opacity: 0;
+}
+button:hover .arrow-right{
+    margin-left: 10px;
+    margin-right: -50px;
+    opacity: 0;
+}
+
+button:hover .arrow-left{
+    opacity: 1;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -20px;
+}
+.rev-image{
+    position: absolute;
+}
+.rev-image[alt*="tri-d"]{
+    top: 85%;
+    left: 12%;
+}
+.rev-image[alt*="tri-d"]{
+
+    top: 85%;
+    left: 12%;
+}
+.rev-image[alt*="sq"]{
+    top: 10%;
+    left: 50%;
+}
+.rev-image[alt*="cir"]{
+    top: 40%;
+    left: 90%;
+}
+.rev-image[alt*="cir-2"]{
+    top: 90%;
+    left: 70%;
+}
+.rev-image[alt*="rocket"]{
+    width: 500px;
+    top: 100%;
+    left: 0;
+    
+}
+
+/********************************************************/
+
+/******************** SECTION 2 ************************/
+.sec-2{
+    background-color: #f3f4f9;
+}
+.sec-2 .jumbo{
+    margin-top: -100px;
+}
+.sec-2 button{
+    z-index: 2;
+}
+.sec-2 .hero{
+    color: var(--primary);
+    font-size: 45px;
+}
+.sec-2 .sec-text{
+    color: #666a80;
+    font-size: 17px;
+}
+.sec-2 ul{
+    overflow: hidden;
+}
+.sec-2 li .sec-text{
+    font-size: 15px;
+}
+.sec-2 li p{
+    float: left;
+}
+.sec-2 li img{
+    float: left;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.sec-2 .sec-text{
+    margin: 20px 0;
+}
+.sec-2 .jumbo{
+    width: 58%;
+    float: right;    
+}
+
+
+.sec-2 img[alt*="girl"]{
+    width: 480px;
+    left: -10px;
+    top: 45%;
+    opacity: 0;
+    margin-top: -250px;
+    z-index: -1;
+    
+}
+.sec-2 img[alt*="glass"]{
+    width: 65px;
+    left: 350px;
+    top: 15%;
+
+
+}
+.sec-2 img[alt*="phone"]{
+    width: 70px;
+    left: 150px;
+    bottom: 150px;
+}
+.sec-2 img[alt*="i-pod"]{
+    width: 110px;
+    left: 20px;
+    top: 50%;
+}
+.sec-2 button{
+    display: none;
+}
+
+/*******************************************************/
+
+/********************  SECTION 3    ******************************/
+
+.sec-3{
+    background-image: url(../images/rev-8-background-img-1-new.jpg)
+}
+.sec-3 .sec-text{
+    font-size: 15px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+.sec-3 ul.b-list{
+    color: #fff;
+    list-style: disc;
+    margin-left: 15px;
+}
+.sec-3 ul.b-list li{
+    margin: 7px 0;
+}
+.inline-nav{
+    margin-left: -15px;
+}
+.inline-nav li:first-child{
+        margin-left: 0px;
+}
+
+.inline-nav li{
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.inline-nav li:hover{
+    color: #ff4b36;
+    transform: translateX(20px);
+}
+.inline-nav li .arrow-left{
+    transform: translateX(-30px);
+    display: inline-block;
+}
+.inline-nav li:hover .arrow-left{
+    transform: translateX(0px);
+}
+.inline-nav li:first-child:hover{
+    transform: translateX(20px);
+}
+.sec-3 img[alt="rev-img-tri-cir"]{
+    left: 7%;
+    top: 77%
+}
+.sec-3 img[alt="rev-img-tri-cir-2"]{
+    left: 70%;
+    top: 10%
+}
+.sec-3 img[alt="rev-img-tri-d"]{
+    top: 50%;
+    left: 97%;;
+}
+.sec-3 img[alt="bubble-base"]{
+    width: 600px;
+    z-index: -1;
+    right: 60px;
+    top: 10%;
+}
+.sec-3 img[alt="man"]{
+    width: 342px;
+    right: 00px;
+    opacity: 0;
+}
+ul.tab-content{
+    position: relative;
+    overflow: hidden;
+}
+ul.tab-content li{
+    height: auto;
+    position: absolute;   
+    top: 0;
+    left: 0;
+}
+.tab-content li{
+    display: none;
+    transition: all 0.4s;
+    padding: 0 12px;
+}
+
+
+
+
+
+
+/***********************************************************/
+
+/***************************** SECTION 4    **************/
+.sec-4{
+    background-color: #f3f4f9;
+}
+.sec-4 .hero{
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+.sec-4 .title{
+    color: #1d2026;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.contacts li img[alt*="icon"]{
+    width: 20px;
+    margin-right: 10px;
+}
+.contacts li{
+    color: #666a80;
+    font-size: 15px;
+    line-height: 38px;
+}
+.social-{
+    margin-top: 20px;
+}
+.social-nav li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.social-nav li a{
+    font-size: 20px;
+    width: 100%;
+    display: block;
+    color: var(--primary);
+    margin-top: 9px;
+    text-align: center;
+}
+.sec-4 form#message-form input{
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #a6a8ad;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--primary);
+    padding: 5px 0 0 0;
+    margin: 20px 0;
+}
+.sec-4 form#message-form input::placeholder{
+    color: var(--primary);
+    
+}
+.sec-4 form .btn{
+    background-color: var(--tomato);
+    width: 200px;
+    margin: 20px 0 0 0;
+}
+.sec-4 img[alt*="bubble-bg"]{
+    top: 0;
+    left: 30px;
+}
+/********************************************************/
+/************************  KEYFRAMES    *******************************/
+
+.anim{
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+.anim-circle{
+    animation-name: circle;
+}
+
+.sec-1 img[alt*="rev-img-rocket"]{
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+.anim-rocket{
+    animation-name: rocket-anim;
+}
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translateX(10px) rotate(0deg); 
+    }
+    100%   { 
+        transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+}
+
+@keyframes rocket-anim{
+    0%{
+       top: 100%;
+        left: 0; 
+    }
+    50%{
+        top: 20%;
+        left: 50%;
+    }
+    100%{
+        top: -100%;
+        left: 110%;
+    }
+}
+
+
+.girl-entry{
+    animation-name: girl-entry;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.girl-anim{
+    animation-name: girl-anim;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.anim-rotate{
+    animation-name: anim-rotate;
+    animation-duration: 30s;
+}
+.boy-entry{
+    animation-name: boy-entry;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+.boy-anim{
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes girl-entry{
+    0%{
+        left: -10px;
+        top: 45%;
+        opacity: 0.5;
+    }
+    100%{
+        left: 30px;
+        top: 50%;   
+        opacity: 1;
+    }
+    
+}
+@keyframes girl-anim{
+    0%{
+       left: 30px;
+        top: 50%;
+    }
+    50%{
+        left: 30px;
+        top: 45%;
+    }
+    100%{
+        left: 30px;
+        top: 50%;
+    }
+}
+
+@keyframes boy-entry{
+    0%{
+        opacity: 0;
+        right: 0;
+    }
+    100%{
+        right: 150px;
+        opacity: 1
+    }
+}
+
+@keyframes anim-rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+/*******************************************************/
+
+.text-change .main-text{
+    display: block;
+    transition: all 0.4s;
+}
+.hero.left{
+    float: left;
+}
+.text-change.hero{
+    margin-top: 19px;
+    margin-left: 20px;
+}
+.text-change{
+    float: left;
+    height: 75px;
+    display: inline-block;
+    overflow: hidden;
+}
+.main-text.text-anim{
+    animation-name: text-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.text-change .over-text{
+    line-height: 100px;
+    margin-bottom: 10px;
+    color: var(--tomato);
+}
+.clearfix{
+    clear: both;
+}
+.sec-2 .text-change{
+    margin: 0;
+}
+@keyframes text-anim{
+    0%{
+        margin-top: inherit;
+    }
+    100%{
+        margin-top: -82px;
+    }
+}
+
+
+/************   MEDIA QUERY     *******************/
+@media (max-width: 1024px){
+     .sec-3 img[alt="man"]{
+        width: 200px;
+        z-index: -1;
+        right: 00px;
+        top: 60%;
+        opacity: 0;
+    }
+}
+@media (max-width: 768px){
+    .sec-2 .jumbo{
+        width: 100%;
+        float: none;
+    }
+    .scroll{
+        display: none;
+    }
+    .sec-2 ul{
+        display: none;
+    }
+    
+    .sec-2 img[alt*="girl"]{
+        animation-name: none;
+        width: 300px;
+        left: 60%;
+        top: 95%;
+        opacity: 0;
+        margin-top: -250px;
+        z-index: -1;
+    
+    }
+    .sec-2 img[alt*="glass"]{
+        animation-name: none;
+        width: 65px;
+        left: 85%;
+        top: 50%;
+
+    }
+    .sec-2 img[alt*="phone"]{
+        width: 70px;
+        animation-name: none;
+        left: 65%;
+        bottom: 0;
+    }
+    .sec-2 img[alt*="i-pod"]{
+        width: 110px;
+        animation-name: none;
+        left: 50%;
+        top: 60%;
+    }
+    .sec-2 button{
+        display: block;
+        background-color: var(--tomato);
+    }
+}
+
+@media (max-width: 500px){
+    .sec-1 .jumbo{
+        margin-top: 120px;
+    }
+    form{
+        display: none;
+    }
+    .rev-image[alt*="rocket"]{
+        z-index: -1;
+        width: 150px;
+        top: 0%;
+        left: 80%;
+        animation-name: m-rocket;
+    }
+    .rev-image[alt*="rocket"].m-rocket{
+        animation-name: m-rocket;
+    }
+     .sec-2 img.rev-image[alt*="girl"]{
+        left: 25%;
+         top: 100%;
+         opacity: 1;
+         width: 250px;
+         animation-name: m-girl-anim;
+         animation-duration: 4s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+         animation-fill-mode: both;
+         
+    }
+    .sec-2 img.rev-image[alt*="glass"]{
+        left: 55%;
+        top: 60%;
+        width: 50px;
+        animation-name: circle;
+    }
+    .sec-2 img.rev-image[alt*="phone"]{
+        top: 85%;
+        width: 50px;
+        left: 40%;
+        animation-name: circle;
+         z-index: -5;
+    }
+    .sec-2 img.rev-image[alt*="i-pod"]{
+        top: 70%;
+        width: 100px;
+        left: 15%;
+        animation-name: circle;
+         z-index: -5;
+    }
+    .jumbo .hero.hero-text{
+        font-size: 40px;
+    }
+    .jumbo .text-change{
+        margin: 0;
+    }
+    .sec-1 .sec-text, .sec-2 .sec-text{
+        display: none;
+    }
+    .sec-1 button{
+      margin: 10px auto;
+    } 
+     .jumbo{
+        text-align: center !important;
+    }
+    .text-change, .hero-text.left{
+        float: none;
+    }
+    .sec-2 .jumbo{
+        margin-top: 000px;
+    }
+    .sec-2 button.btn{
+        margin: 0 auto;
+        width: 200px;
+    }
+    .sec-3 ul.b-list{
+        display: none;
+    }
+    .sec-3 ul.inline-nav li{
+        width: 200px;
+    }
+    .sec-3 ul li{
+        margin: 5px 0;
+        width: 140px;
+        text-align: left;
+        display: block;
+    }
+    .sec-3 p{
+        text-align: left;
+    }
+    .contacts li img[alt*="icon"]{
+        width: 15px;
+        margin-right: 5px;
+    }
+    ul.tab-content li{
+        text-align: left;
+        width: 100%;   
+    }
+    .sec-3 .rev-image{
+        display: none;
+    }
+    
+}
+
+/****************KEYFRAMES MOBILE *******************/
+@keyframes m-rocket{
+    0%{
+        top: 85%;
+        left: -200px;
+    }
+    50%{
+        top: 40%;
+        left: 30%;
+    }
+    100%{
+        top: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes m-girl-anim{
+    0%{
+        left: 25%;
+         top: 100%;   
+    }
+    50%{
+        top: 95%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+/***************************************************/
+
+/**************************************************/
